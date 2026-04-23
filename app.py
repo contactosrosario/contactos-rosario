@@ -24,8 +24,9 @@ if st.button("Guardar"):
             if nombre in df["Nombre"].values:
                 st.warning("Ese nombre ya existe")
             else:
-                nuevo = pd.DataFrame([[nombre, edad, whatsapp, categoria, estado]],
-                                    columns=["Nombre", "Edad", "WhatsApp", "Categoria", "Estado"] 
+                
+nuevo = pd.DataFrame([[nombre, edad, whatsapp, categoria, estado]],
+                     columns=["Nombre", "Edad", "WhatsApp", "Categoria", "Estado"])
 
 
 
@@ -71,3 +72,4 @@ if os.path.exists("datos.csv"):
                     st.write("---")
     else:
         st.write("No hay coincidencias aún")
+        
