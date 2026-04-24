@@ -4,13 +4,17 @@ import pandas as pd
 import os
 
 
-st.info("💰 ¿Querés más visibilidad? Destacá tu contacto por 24hs. Escribinos por WhatsApp.")
+st.info("💰 ¿Querés más visibilidad? Destacá tu contacto por 24hs.")
 
-st.markdown("[📲 Destacar mi perfil](https://wa.me/549XXXXXXXXXX)")
+st.markdown("[📲 Hablar por WhatsApp para destacar](https://wa.me/5493417828575)")
+
 # FORMULARIO
 nombre = st.text_input("Nombre").strip().title()
 edad = st.number_input("Edad", min_value=18, max_value=100, step=1)
-whatsapp = st.text_input("WhatsApp")
+whatsapp = st.text_input("WhatsApp (solo números, ej: 5493411234567)")
+
+if whatsapp and not whatsapp.isdigit():
+    st.warning("Ingresá solo números en WhatsApp")
 categoria = st.selectbox("Categoría", ["Trabajo", "Amistad", "Amor"])
 estado = st.selectbox("Estado", ["Busco", "Ofrezco"])
 
