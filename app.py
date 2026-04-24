@@ -8,7 +8,7 @@ st.info("💰 ¿Querés más visibilidad? Destacá tu contacto por 24hs. Escribi
 
 st.markdown("[📲 Destacar mi perfil](https://wa.me/549XXXXXXXXXX)")
 # FORMULARIO
-nombre = st.text_input("Nombre")
+nombre = st.text_input("Nombre").strip().title()
 edad = st.number_input("Edad", min_value=18, max_value=100, step=1)
 whatsapp = st.text_input("WhatsApp")
 categoria = st.selectbox("Categoría", ["Trabajo", "Amistad", "Amor"])
