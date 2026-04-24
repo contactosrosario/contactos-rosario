@@ -7,7 +7,7 @@ st.markdown("### Conectá personas en Rosario por trabajo, amistad o amor 💬")
 
 # 💰 MONETIZACIÓN
 st.info("💰 ¿Querés más visibilidad? Destacá tu contacto por 24hs.")
-st.markdown("[📲 Hablar por WhatsApp para destacar](https://wa.me/5493417828575)") 
+st.markdown("[📲 Hablar por WhatsApp para destacar](https://wa.me/5493413497757)") 
 
 # FORMULARIO
 nombre = st.text_input("Nombre").strip().title()
