@@ -3,9 +3,10 @@ import streamlit as st
 import pandas as pd
 import os
 
-st.title("📱 Contactos Rosario")
-st.markdown("### Conectá personas en Rosario por trabajo, amistad o amor 💬")
 
+st.info("💰 ¿Querés más visibilidad? Destacá tu contacto por 24hs. Escribinos por WhatsApp.")
+
+st.markdown("[📲 Destacar mi perfil](https://wa.me/549XXXXXXXXXX)")
 # FORMULARIO
 nombre = st.text_input("Nombre")
 edad = st.number_input("Edad", min_value=18, max_value=100, step=1)
